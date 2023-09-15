@@ -5,8 +5,6 @@ numba
 phonemizer
 scipy
 tensorboard
-torch
-torchvision
 Unidecode
 amfm_decompy
 jieba
