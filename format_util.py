@@ -17,7 +17,7 @@ def process_folder(folder_path):
 
 
 def generate_text(wav_path, text):
-    return f"{wav_path}|符玄|ZH|{text}"
+    return f"{wav_path}|克拉拉|ZH|{text}"
 
 
 def save_to_txt(data_list, file_path):
@@ -27,7 +27,7 @@ def save_to_txt(data_list, file_path):
 
 
 # 示例文件夹路径
-folder_path = "raw/fuxuan"
+folder_path = "/content/Bert-VITS2/raw/clara"
 
 file_data = process_folder(folder_path)
 
@@ -37,5 +37,5 @@ txtList = list()
 for file in file_data:
     txtList.append(generate_text(file["wav_path"], file["text"]))
 
-file_path = "filelists/fuxuan.txt"
+file_path = "/content/Bert-VITS2/filelists/fuxuan.txt"
 save_to_txt(txtList, file_path)
