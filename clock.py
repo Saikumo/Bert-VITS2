@@ -3,12 +3,13 @@ import time
 
 while True:
     # 执行命令行命令
-    command = "ls"
-    result = subprocess.run(command, shell=True)
+    command1 = "touch /content/Bert-VITS2/logs/d.pth"
+    result = subprocess.run(command1, shell=True)
 
-    # 打印命令执行结果
-    print("命令执行结果:")
-    print(result)
+
+    command2 = "cp -r /content/Bert-VITS2/logs /content/drive/MyDrive/Bert-VITS2/model"
+    result = subprocess.run(command2, shell=True)
+
 
     # 等待一个小时
     time.sleep(3600)
