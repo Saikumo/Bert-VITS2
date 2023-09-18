@@ -19,7 +19,7 @@ from text.cleaner import clean_text
 @click.option("--val-path", default="/content/Bert-VITS2/filelists/val.list")
 @click.option(
     "--config-path",
-    default="configs/config.json",
+    default="/content/Bert-VITS2/configs/config.json",
     type=click.Path(exists=True, file_okay=True, dir_okay=False),
 )
 @click.option("--val-per-spk", default=4)
