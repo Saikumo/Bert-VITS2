@@ -192,7 +192,7 @@ def get_hparams(init=True):
         "-c",
         "--config",
         type=str,
-        default="./configs/base.json",
+        default="/content/Bert-VITS2/configs/base.json",
         help="JSON file for configuration",
     )
     parser.add_argument("-m", "--model", type=str, required=True, help="Model name")
