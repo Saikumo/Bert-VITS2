@@ -37,5 +37,5 @@ txtList = list()
 for file in file_data:
     txtList.append(generate_text(file["wav_path"], file["text"]))
 
-file_path = "/content/Bert-VITS2/filelists/fuxuan.txt"
+file_path = "/content/Bert-VITS2/filelists/clara.txt"
 save_to_txt(txtList, file_path)
