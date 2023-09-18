@@ -11,4 +11,4 @@ while True:
 
 
     # 等待一个小时
-    time.sleep(60)
+    time.sleep(3600)
