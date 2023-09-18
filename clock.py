@@ -1,7 +1,7 @@
 import subprocess
 import time
 
-command1 = "touch /content/Bert-VITS2/logs/e.pth"
+command1 = "python /content/Bert-VITS2/train_ms.py -m /content/Bert-VITS2/logs/base -c /content/Bert-VITS2/configs/config.json"
 result = subprocess.run(command1, shell=True)
 
 while True:
