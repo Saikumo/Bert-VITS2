@@ -11,12 +11,12 @@ from text.cleaner import clean_text
 @click.command()
 @click.option(
     "--transcription-path",
-    default="filelists/clara.txt",
+    default="/content/Bert-VITS2/filelists/clara.txt",
     type=click.Path(exists=True, file_okay=True, dir_okay=False),
 )
 @click.option("--cleaned-path", default=None)
-@click.option("--train-path", default="filelists/train.list")
-@click.option("--val-path", default="filelists/val.list")
+@click.option("--train-path", default="/content/Bert-VITS2/filelists/train.list")
+@click.option("--val-path", default="/content/Bert-VITS2/filelists/val.list")
 @click.option(
     "--config-path",
     default="configs/config.json",
